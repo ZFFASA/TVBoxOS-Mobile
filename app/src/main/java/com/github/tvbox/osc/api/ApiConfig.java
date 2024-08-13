@@ -128,8 +128,7 @@ public class ApiConfig {
     }
 
     public void loadConfig(boolean useCache, LoadConfigCallback callback, Activity activity) {
-        String apiUrl = Hawk.get(HawkConfig.API_URL, "
-http://yezilive.jxpan.vip:82/iptv.txt");
+        String apiUrl = Hawk.get(HawkConfig.API_URL, "http://yezilive.jxpan.vip:82/iptv.txt");
         if (apiUrl.isEmpty()) {
             callback.error("-1");
             return;
